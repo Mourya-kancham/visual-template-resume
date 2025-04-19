@@ -1,0 +1,139 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone, Linkedin, Github, ExternalLink } from "lucide-react";
+
+export default function Resume() {
+  return (
+    <div className="max-w-5xl mx-auto p-6 space-y-6 bg-white text-gray-800">
+      <div className="text-center">
+        <h1 className="text-5xl font-extrabold text-blue-700">Kancham Mourya</h1>
+        <p className="text-lg text-gray-600">Business Analyst & Functional Consultant</p>
+        <div className="flex justify-center flex-wrap gap-4 mt-3 text-sm text-gray-500">
+          <span className="flex items-center gap-1"><Mail size={16}/> kancham.mourya@gmail.com</span>
+          <span className="flex items-center gap-1"><Phone size={16}/> +91 9494746716</span>
+        </div>
+        <div className="flex justify-center flex-wrap gap-6 mt-2 text-blue-600 text-sm">
+          <a href="https://www.linkedin.com/in/mourya-kancham-a0703226b/" target="_blank" className="flex items-center gap-1"><Linkedin size={16}/> LinkedIn</a>
+          <a href="https://github.com/Mourya-kancham" target="_blank" className="flex items-center gap-1"><Github size={16}/> GitHub</a>
+          <a href="https://www.salesforce.com/trailblazer/mouryak97" target="_blank" className="flex items-center gap-1"><ExternalLink size={16}/> Salesforce Trailblazer</a>
+        </div>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Professional Summary</h2>
+            <p className="text-sm leading-relaxed">Dynamic and insightful Business Analyst with over 8 years of cross-industry experience delivering high-impact, human-centric solutions. Adept at aligning business goals with technology using strong domain knowledge in ERP, Facility Management, and enterprise systems. Renowned for translating data into stories that drive results, fostering collaboration, and making strategic decisions with empathy and precision.</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Core Competencies</h2>
+            <p className="text-sm leading-relaxed">Business Analysis, ERP & FM Systems, Functional Design, Agile/Scrum, Business Process Mapping, UAT & Training, Client Engagement, Communication Strategy, Stakeholder Collaboration, Gap Analysis, Strategic Planning, Digital Transformation</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Technical Skills</h2>
+            <p className="text-sm">SQL (Advanced Queries, Joins, Indexing), Java (Functional Exposure), Power BI (DAX, Data Modeling, KPI Dashboards), Tableau, Oracle & MS SQL Server (DB Ops), HTML/CSS (Basic UI Design), Visio/UML, Excel (Pivot, VLOOKUP, Dashboards), Salesforce (CRM Workflow, Object Setup), Jira & Confluence (Agile Tools), GitHub (Code & Projects)</p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Education</h2>
+            <p className="text-sm">B.Sc. – Dr. B. R. Ambedkar University, Agra, UP • 2018</p>
+          </CardContent>
+        </Card>
+      </div>
+
+      <Card>
+        <CardContent className="p-4 space-y-6">
+          <h2 className="text-xl font-semibold mb-2">Professional Experience</h2>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">SwankTek Inc. – Business Analyst (UBS Group)</h3>
+            <p className="text-sm italic">Jul 2024 – Present</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Partnered with UBS Wealth Management to enhance client-facing banking systems by gathering insights and shaping business priorities into agile deliverables.</li>
+              <li>Utilized SQL queries and compliance frameworks to identify risk areas and reduce audit-related reporting time by 15%.</li>
+              <li>Built interactive dashboards using Power BI and streamlined workflows via Visio, aiding executive visibility.</li>
+              <li>Managed backlog refinement, sprint planning, and retrospectives, ensuring product value aligned with stakeholder vision.</li>
+              <li>Documented system enhancements, led UAT, and presented findings directly to senior management for adoption sign-off.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">Bridgetown Consulting Group – Business Analyst</h3>
+            <p className="text-sm italic">Jan 2024 – Jun 2024</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Redesigned recruitment workflows by integrating ATS insights and Salesforce CRM modules to cut hiring delays by 22%.</li>
+              <li>Engaged in weekly CXO-level discussions to tailor staffing strategies backed by performance data and market analysis.</li>
+              <li>Translated executive goals into technical requirements, working closely with IT teams to enhance CRM tools.</li>
+              <li>Delivered sprint-based updates and participated in live demos to improve feedback loops and align goals.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">Amvotech Solutions Inc – BA / Associate Developer</h3>
+            <p className="text-sm italic">Mar 2023 – Dec 2023</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Collaborated with clients to build customized business tools in Java, aligning deliverables with operational needs.</li>
+              <li>Managed the development lifecycle using Jira and functional documents, improving delivery time and stakeholder clarity.</li>
+              <li>Designed and deployed Power BI reports for client dashboards, elevating internal visibility and decision-making speed.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">Deshpande Foundation – Project Development Manager</h3>
+            <p className="text-sm italic">Jan 2022 – Feb 2023</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Launched a farm pond tracking app to digitize rural water conservation monitoring.</li>
+              <li>Built dashboards for donor and government reporting, increasing stakeholder transparency and funding by 18%.</li>
+              <li>Coordinated with field staff and partners to ensure resource availability and execution quality.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">Sid’s Farm Pvt Ltd – Data Analyst</h3>
+            <p className="text-sm italic">May 2019 – Jan 2022</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Analyzed production data to reduce overproduction by 8% and proposed actionable shifts in demand planning.</li>
+              <li>Created and maintained real-time KPI dashboards in Power BI to monitor deliveries and product quality.</li>
+              <li>Worked closely with marketing to identify sales trends from customer behavior insights.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-blue-800">Krishi Vignan Kendra – Project Manager</h3>
+            <p className="text-sm italic">Mar 2018 – May 2019</p>
+            <ul className="list-disc pl-5 text-sm space-y-1">
+              <li>Managed rural development projects, trained 200+ farmers, and coordinated resources with government and vendors.</li>
+              <li>Helped scale irrigation practices using structured documentation and real-time field data.</li>
+            </ul>
+          </div>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-4">
+          <h2 className="text-xl font-semibold mb-2">Additional Highlights</h2>
+          <ul className="list-disc pl-5 text-sm space-y-1">
+            <li>Contributor to open-source projects focusing on business analysis utilities.</li>
+            <li>Collaborates effectively with multicultural teams across three continents.</li>
+            <li>Enjoys translating complex datasets into engaging narratives for stakeholders.</li>
+          </ul>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent className="p-4">
+          <h2 className="text-xl font-semibold mb-2">Languages</h2>
+          <p className="text-sm">English (Fluent) • Hindi (Professional) • Telugu (Native)</p>
+        </CardContent>
+      </Card>
+    </div>
+  );
+}
